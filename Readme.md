@@ -1,12 +1,12 @@
-#logger for node
+# logger for node
 simple logger
 
 
-#Installation
+# Installation
 npm i --save node-express-logger
 
 
-#Usage
+# Usage
 var logger = require("node-express-logger");
 logger.config({
 	logFilePath: "./log",
