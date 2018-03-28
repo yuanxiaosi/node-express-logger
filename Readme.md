@@ -1,6 +1,9 @@
 # logger for node
-simple logger
+simple logger supports different colors
 
+![Alt text](https://github.com/yuanxiaosi/node-express-logger/raw/master/screenshots/1.png)
+
+![Alt text](https://github.com/yuanxiaosi/node-express-logger/raw/master/screenshots/2.png)
 
 # Installation
 npm i --save node-express-logger

@@ -18,5 +18,5 @@ aa(function(cb){
 function bb(){
 	log.Debug("123123")
 }
-console.log(123)
+
 
