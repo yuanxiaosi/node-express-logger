@@ -8,6 +8,7 @@ var Logger = function(){
 }
 
 Logger.prototype.config = function(data){
+  console.log(data)
   this.logFilePath = data.logFilePath;
   this.logFileName = data.logFileName;
 }
@@ -144,19 +145,19 @@ Logger.prototype.commandLog = function(type, data){ //命令行输出 和颜色�
 
   switch (type){
     case "INFO":
-      console.log("\x1B[37m", data)
+      console.log("\x1B[37m%s\x1B[0m", data)
       break;
     case "DEBUG":
-      console.log("\x1B[36m", data)
+      console.log("\x1B[36m%s\x1B[0m", data)
       break;
     case "WARNING":
-      console.log("\x1B[33m", data)
+      console.log("\x1B[33m%s\x1B[0m", data)
       break;
     case "ERROR":
-      console.log("\x1B[31m", data)
+      console.log("\x1B[31m%s\x1B[0m", data)
       break;
     case "TRACE":
-      console.log("\x1B[31m", data)
+      console.log("\x1B[31m%s\x1B[0m", data)
       break;
   }
 }
