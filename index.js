@@ -161,4 +161,6 @@ Logger.prototype.commandLog = function(type, data){ //命令行输出 和颜色�
   }
 }
 
-module.exports = new Logger();
+var logger = new Logger();
+
+module.exports = logger;
